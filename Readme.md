@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Светлана Мальцева](https://up.htmlacademy.ru/adaptive/8/user/88410).
-* Наставник: `Неизвестно`.
+* Наставник: `Вадим Федоров`.
 
 ---
 
