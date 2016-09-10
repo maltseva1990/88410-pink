@@ -24,6 +24,7 @@
         <h1 class="page-header__title">Фотографии пользователей</h1>
       </div>
     </header>
+
     <section class="photos">
       <div class="photos__wrapper">
         <p> Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
@@ -31,55 +32,56 @@
           <div class="item-desc">
             <a href="#"><img src="#" width="200" height="100" alt=""></a>
             <a class="item-desc__name" href="#">Анна</a>
-            <div class="item-desc__time">(5 минут назад)</div>
+            <span class="item-desc__time-ago">(5 минут назад)</span>
             <p class="item-desc__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">215</span></div>
           </div>
           <div class="item-desc">
             <a href="#"><img src="#" width="200" height="100" alt=""></a>
             <a class="item-desc__name" href="#">Левон</a>
-            <div class="item-desc__time">(5 часов назад)</div>
+            <span class="item-desc__time-ago">(5 часов назад)</span>
             <p class="item-desc__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">356</span></div>
           </div>
           <div class="item-desc">
             <a href="#"><img src="#" width="200" height="100" alt=""></a>
             <a class="item-desc__name" href="#">Антон</a>
-            <div class="item-desc__time">(12 часов назад)</div>
+            <span class="item-desc__time-ago">(12 часов назад)</span>
             <p class="item-desc__message">Соседи будут рады.</p>
             <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">566</span></div>
           </div>
           <div class="item-desc">
             <a href="#"><img src="#" width="200" height="100" alt=""></a>
             <a class="item-desc__name" href="#">Борис</a>
-            <div class="item-desc__time">(20 часов назад)</div>
+            <span class="item-desc__time-ago">(20 часов назад)</span>
             <p class="item-desc__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">215</span></div>
           </div>
           <div class="item-desc">
             <a href="#"><img src="#" width="200" height="100" alt=""></a>
             <a class="item-desc__name" href="#">Сергей</a>
-            <div class="item-desc__time">(25 часов назад)</div>
+            <span class="item-desc__time-ago">(25 часов назад)</span>
             <p class="item-desc__message">Самая кубанская в мире!</p>
             <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">4</span></div>
           </div>
           <div class="item-desc">
             <a href="#"><img src="#" width="200" height="100" alt=""></a>
             <a class="item-desc__name" href="#">Максим</a>
-            <div class="item-desc__time">(40 часов назад)</div>
+            <span class="item-desc__time-ago">(40 часов назад)</span>
             <p class="item-desc__message">Где снег-то?</p>
             <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">150</span></div>
           </div>
           <div class="item-desc">
             <a href="#"><img src="#" width="200" height="100" alt=""></a>
             <a class="item-desc__name" href="#">Надежда</a>
-            <div class="item-desc__time">(45 часов назад)</div>
+            <span class="item-desc__time-ago">(45 часов назад)</span>
             <p class="item-desc__message">Всем GM и взаимные лайки!</p>
             <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">2560</span></div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="new-user-photo">
       <div class="new-user-photo__wrapper">
         <p class="new-user-photo__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
@@ -89,38 +91,29 @@
           <fieldset class="upload-form__upload-filter-controls">
 
             <input type="radio" name="upload-filter" id="upload-filter-none" value="none" checked>
-            <label class="upload-filter-label" for="upload-filter-none">
-            <div class="upload-filter-preview"></div>
-          </label>
+            <label class="upload-filter-label" for="upload-filter-none"></label>
 
             <input type="radio" name="upload-filter" id="upload-filter-cadr" value="cadr" checked>
-            <label class="upload-filter-label" for="upload-filter-cadr">
-            <div class="upload-filter-preview"></div>
-          </label>
+            <label class="upload-filter-label" for="upload-filter-cadr"></label>
 
             <input type="radio" name="upload-filter" id="upload-filter-fill" value="fill">
-            <label class="upload-filter-label upload-filter-label-chrome" for="upload-filter-fill">
-            <div class="upload-filter-preview"></div>
-            Заливка
+            <label class="upload-filter-label upload-filter-label-chrome" for="upload-filter-fill">Заливка
           </label>
 
             <input type="radio" name="upload-filter" id="upload-filter-contrast" value="contrast">
-            <label class="upload-filter-label upload-filter-label-contrast" for="upload-filter-contrast">
-            <div class="upload-filter-preview"></div>
-            Контраст
+            <label class="upload-filter-label upload-filter-label-contrast" for="upload-filter-contrast">Контраст
             </label>
           </fieldset>
 
           <div class="upload-form__range-filter">
             <div class="upload-form___range-controls">
-              <!-- <div class="scale"><div style="width:70%;" class="bar"></div></div> -->
                 <div class="toggle min-toggle"></div>
                 <div class="toggle max-toggle"></div>
             </div>
-            </div>
+          </div>
 
-          <button class="upload-form __upload-submit upload-control" type="submit">Запостить</button>
-          <button class="upload-form __no-upload-submit no-upload-control" type="submit">Отмена</button>
+          <button class="upload-form__upload-submit upload-control" type="submit">Запостить</button>
+          <button class="upload-form__no-upload-submit no-upload-control">Отмена</button>
 
         </form>
       </div>

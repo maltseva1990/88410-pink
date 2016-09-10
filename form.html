@@ -34,30 +34,36 @@
         </div>
         <div class="form-info__feedback-form-group name-area">
           <label for="name">Имя:</label>
-          <input type="text" name="name" id="name" placeholder="Укажите фамилию">
+          <input type="text" name="name" id="name" placeholder="Введите ваше имя">
         </div>
         <div class="form-info__feedback-form-group second-name-area">
           <label for="second-name">Ну и отчество:</label>
-          <input type="text" name="second-name"id="secondname" placeholder="Укажите фамилию">
+          <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
         </div>
         <div class="form-info__feedback-form-group checkbox-area">
           <div class="checkbox-area__item">
-            <label> Сделал селфи с акулой <input type="checkbox" name="selfie-with-shark" checked=""></label>
+            <input id="selfie-with-shark" type="checkbox" name="selfie-with-shark" checked="">
+            <label for="selfie-with-shark"> Сделал селфи с акулой </label>
           </div>
           <div class="checkbox-area__item">
-            <label> Обгорел на пляже <input type="checkbox" name="burned-on-the-beach" checked=""></label>
+            <input id="burned-on-the-beach" type="checkbox" name="burned-on-the-beach" checked="">
+            <label for="burned-on-the-beach"> Обгорел на пляже </label>
           </div>
           <div class="checkbox-area__item">
-            <label> Видел Чака Норриса <input type="checkbox" name="saw-Chuck"></label>
+            <input id="saw-Chuck" type="checkbox" name="saw-Chuck">
+            <label for="saw-Chuck"> Видел Чака Норриса </label>
           </div>
           <div class="checkbox-area__item">
-            <label> Накупил сувениров <input type="checkbox" name="bought-souvenirs"></label>
+            <input id="bought-souvenirs" type="checkbox" name="bought-souvenirs">
+            <label for="bought-souvenirs"> Накупил сувениров </label>
           </div>
           <div class="checkbox-area__item">
-            <label> Удержал башню <input type="checkbox" name="held-the-tower" checked=""></label>
+            <input id="held-the-tower" type="checkbox" name="held-the-tower" checked="">
+            <label for="held-the-tower"> Удержал башню </label>
           </div>
           <div class="checkbox-area__item">
-            <label> Разгромил отель<input type="checkbox" name="crushed-the-hotel"></label>
+            <input id="crushed-the-hotel" type="checkbox" name="crushed-the-hotel">
+            <label for="crushed-the-hotel"> Разгромил отель</label>
           </div>
         </div>
         <div class="form-info__feedback-form-group phone-area">
@@ -79,17 +85,17 @@
             <input type="radio" name="third-option" value="Windows Phone">Windows Phone
           </label>
         </div>
-        <div class="form-info__feedback-form-group texarea-area">
+        <div class="form-info__feedback-form-group textarea-area">
           <label class="texarea-area__item" for="message">Опишите свои эмоции:</label>
           <textarea name="message" id="message" cols="20" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
-            <div class="form-info__feedback-form-group submit-area">
-              <input type="submit" class="btn" value="Отправить форму">
-            </div>
+        <div class="form-info__feedback-form-group submit-area">
+          <button class="btn" type="button" name="button">Отправить форму</button>
+        </div>
       </form>
-      <p class="form-info-main__remark">
+      <div class="form-info-main__remark">
         * - обязательные поля
-      </p>
+      </div>
     </section>
 
     <footer class="page-footer">
