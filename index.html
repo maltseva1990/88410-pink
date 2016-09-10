@@ -6,7 +6,132 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__menu">
+          <a class="page-header__logo-link" href="#">PINK</a>
+          <nav class="main-nav main-nav--closed main-nav--no-js">
+            <button class="main-nav-toogle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__items">
+                <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+                <li class="main-nav__item"><a href="#">Фотографии</a></li>
+                <li class="main-nav__item"><a href="#">Конкурс</a></li>
+                <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="download-app_">
+      <div class="download-app__wrapper">
+        <div class="download">
+          <a class="btn" href="#">Скачать приложение</a>
+          <ul class="download__items">
+            <li class="download__item">Apple</li>
+            <li class="download__item">Android</li>
+            <li class="download__item">Windows</li>
+          </ul>
+            <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features__wrapper">
+        <span class="features__slogans">
+          <p class="features__slogan">Устали от верости мегаполиса? <br> Нам есть что вам предложить!</p>
+        </span>
+        <div class="advantages">
+          <ul class="advantages__items">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <input type="radio" name="reviews" id="reviews-input-1">
+        <input type="radio" name="reviews" id="reviews-input-2">
+        <input type="radio" name="reviews" id="reviews-input-3">
+        <div class="reviews__items">
+          <blockquote class="reviews__item slider__item">
+            <h2>Николай Петров</h2>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
+        <div class="reviews__toggles slider__toggles">
+          <label class="slider__toggle" for="reviews-input-1"></label>
+          <label class="slider__toggle" for="reviews-input-2"></label>
+          <label class="slider__toggle" for="reviews-input-3"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__wrapper slider">
+        <input class="slider__input" type="radio" name="price" id="price-input-1">
+        <input class="slider__input" type="radio" name="price" id="price-input-2">
+        <input class="slider__input" type="radio" name="price" id="price-input-3">
+        <div class="price__items">
+          <div class="price__item">
+            <h2 class="price__title">Стандарт <br> 3,99 USD</h2>
+            <ul class="price__descs">
+              <li class="price__desc">
+                <label for="pink-filter">Розовый фильтр</label>
+                <input type="checkbox" name="pink-filter" id="pink-filter" checked>
+              </li>
+              <li class="price__desc">
+                <label for="smiles">Смайлики</label>
+                <input type="checkbox" name="smiles" id="smiles" checked>
+              </li>
+              <li class="price__desc">
+                <label for="comments">Комментарии</label>
+                <input type="checkbox" name="comments" id="comments"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="price__toggles slider__toggles">
+          <label class="slider-toggle" for="price-input-1"></label>
+          <label class="slider-toggle" for="price-input-2"></label>
+          <label class="slider-toggle" for="price-input-3"></label>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <h3 class="page-footer__contact-title"> Остались вопросы? <br> Свяжитесь с нами!</h3>
+            <p class="page-footer__contact-text">
+              Звоните:<br>
+              <a class="page-footer__phone" href="tel:+74950001100" >4950001100</a>
+            </p>
+            <p class="page-footer__contact-text">Пишите:<br>
+              <a class="page-footer__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="page-footer__contact-text">Приезжайте в гости:<br>
+              <a class="page-footer__address" href="#">ул. Большая Конюшенная 19/2</a>
+            </p>
+        </div>
+      </div>
+      <div class="page-footer__map">
+      </div>
+    </footer>
 
   </body>
 </html>

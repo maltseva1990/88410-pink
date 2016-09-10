@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__menu">
+          <a class="page-header__logo-link" href="#">PINK</a>
+          <nav class="main-nav main-nav--closed main-nav--no-js">
+            <button class="main-nav-toogle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__items">
+                <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+                <li class="main-nav__item"><a href="#">Фотографии</a></li>
+                <li class="main-nav__item"><a href="#">Конкурс</a></li>
+                <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
+    </header>
+
+    <section class="photos">
+      <div class="photos__wrapper">
+        <p> Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+        <div class="photos__items">
+          <div class="item-desc">
+            <a href="#"><img src="#" width="200" height="100" alt=""></a>
+            <a class="item-desc__name" href="#">Анна</a>
+            <span class="item-desc__time-ago">(5 минут назад)</span>
+            <p class="item-desc__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">215</span></div>
+          </div>
+          <div class="item-desc">
+            <a href="#"><img src="#" width="200" height="100" alt=""></a>
+            <a class="item-desc__name" href="#">Левон</a>
+            <span class="item-desc__time-ago">(5 часов назад)</span>
+            <p class="item-desc__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">356</span></div>
+          </div>
+          <div class="item-desc">
+            <a href="#"><img src="#" width="200" height="100" alt=""></a>
+            <a class="item-desc__name" href="#">Антон</a>
+            <span class="item-desc__time-ago">(12 часов назад)</span>
+            <p class="item-desc__message">Соседи будут рады.</p>
+            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">566</span></div>
+          </div>
+          <div class="item-desc">
+            <a href="#"><img src="#" width="200" height="100" alt=""></a>
+            <a class="item-desc__name" href="#">Борис</a>
+            <span class="item-desc__time-ago">(20 часов назад)</span>
+            <p class="item-desc__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">215</span></div>
+          </div>
+          <div class="item-desc">
+            <a href="#"><img src="#" width="200" height="100" alt=""></a>
+            <a class="item-desc__name" href="#">Сергей</a>
+            <span class="item-desc__time-ago">(25 часов назад)</span>
+            <p class="item-desc__message">Самая кубанская в мире!</p>
+            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">4</span></div>
+          </div>
+          <div class="item-desc">
+            <a href="#"><img src="#" width="200" height="100" alt=""></a>
+            <a class="item-desc__name" href="#">Максим</a>
+            <span class="item-desc__time-ago">(40 часов назад)</span>
+            <p class="item-desc__message">Где снег-то?</p>
+            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">150</span></div>
+          </div>
+          <div class="item-desc">
+            <a href="#"><img src="#" width="200" height="100" alt=""></a>
+            <a class="item-desc__name" href="#">Надежда</a>
+            <span class="item-desc__time-ago">(45 часов назад)</span>
+            <p class="item-desc__message">Всем GM и взаимные лайки!</p>
+            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">2560</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-user-photo">
+      <div class="new-user-photo__wrapper">
+        <p class="new-user-photo__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <form class="upload-form upload-image" id="upload-select-image" method="post" enctype="multipart/form-data">
+          <img src="" class="upload-image__filter-image-preview" width="100" height="200">
+
+          <fieldset class="upload-form__upload-filter-controls">
+
+            <input type="radio" name="upload-filter" id="upload-filter-none" value="none" checked>
+            <label class="upload-filter-label" for="upload-filter-none"></label>
+
+            <input type="radio" name="upload-filter" id="upload-filter-cadr" value="cadr" checked>
+            <label class="upload-filter-label" for="upload-filter-cadr"></label>
+
+            <input type="radio" name="upload-filter" id="upload-filter-fill" value="fill">
+            <label class="upload-filter-label upload-filter-label-chrome" for="upload-filter-fill">Заливка
+          </label>
+
+            <input type="radio" name="upload-filter" id="upload-filter-contrast" value="contrast">
+            <label class="upload-filter-label upload-filter-label-contrast" for="upload-filter-contrast">Контраст
+            </label>
+          </fieldset>
+
+          <div class="upload-form__range-filter">
+            <div class="upload-form___range-controls">
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+            </div>
+          </div>
+
+          <button class="upload-form__upload-submit upload-control" type="submit">Запостить</button>
+          <button class="upload-form__no-upload-submit no-upload-control">Отмена</button>
+
+        </form>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo-wrap">
+        <a href=""><img src="#" width="100" height="50" alt="Pink"></a>
+      </div>
+      <div class="page-footer__social">
+        <ul class="social-links">
+          <li><a class="social-links__item-vk" href="">Vk</a></li>
+          <li><a class="social-links__item-fb" href="">Facebook</a></li>
+          <li><a class="social-links__item-inst" href="">Insta</a></li>
+        </ul>
+      </div>
+      <div>
+        <span>Разработано</span>
+        <a href="#">logo HTML Academy</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
