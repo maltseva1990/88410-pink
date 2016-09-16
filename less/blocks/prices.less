@@ -1,0 +1,104 @@
+/* слайдер с ценами */
+.prices {
+  position: relative;
+  padding: 63px 0 55px 0;
+  background-color: @gray;
+
+  &__wrapper {
+    margin-bottom: 43px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  tr {
+    border-collapse: collapse;
+  }
+
+  th {
+    padding: 17px 0;
+    color: @white;
+    background-color: @darkblue;
+    border-collapse: collapse;
+    border:2px solid @border-color;
+  }
+
+  td {
+    text-align: left;
+    color: @darkblue;
+    background-color: @white;
+    border-collapse: collapse;
+    border:2px solid @border-color;
+  }
+
+  /* название тарифа в заголовке таблицы */
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    font: @weight-bold @font-size--medium @font;
+  }
+
+  /* параграф со стоимостью в заголовке таблицы */
+  &__amount {
+    margin: 0;
+    text-transform: uppercase;
+    font: @weight-light @font-size--big @font;
+  }
+
+  /* название feature в таблице */
+  &__feature {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 15px 48px 13px 22px;
+    text-transform: uppercase;
+    font: @weight-normal @font-size--small @font;
+  }
+
+  /* контейнер для абсолютно спозиционированных элементов - галочки, кресты */
+  &__checkbox {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+
+    /* зеленая галочка в таблице */
+    &--checked:after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 1px;
+      width: 25px;
+      height: 10px;
+      border-left: 3px solid @green;
+      border-bottom: 3px solid @green;
+      transform: rotate(-45deg);
+    }
+
+    /* красный крест в таблице */
+    &--unchecked:before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 0;
+      width: 33px;
+      height: 3px;
+      background-color: @red;
+      transform: rotate(-45deg);
+    }
+
+    &--unchecked:after {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 0;
+      width: 33px;
+      height: 3px;
+      background-color: @red;
+      transform: rotate(45deg);
+    }
+  }
+}
+

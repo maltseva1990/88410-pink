@@ -1,101 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=320">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="pink-form-mobile">
+
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__menu">
-          <a class="page-header__logo-link" href="#">PINK</a>
-          <nav class="main-nav main-nav--closed main-nav--no-js">
-            <button class="main-nav-toogle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__items">
-                <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
-                <li class="main-nav__item"><a href="#">Фотографии</a></li>
-                <li class="main-nav__item"><a href="#">Конкурс</a></li>
-                <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+
+        <div class="page-header__top-menu clearfix">
+          <div class="container">
+            <div class="logo">Pink</div>
+
+            <button class="menu-toggle">Меню</button>
+
+            <nav class="mobile-menu">
+
+              <ul class="mobile-menu__items">
+                <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active" href="#">Главная</a></li>
+                <li class="mobile-menu__item"><a href="#">Фотографии</a></li>
+                <li class="mobile-menu__item"><a href="#">Конкурс</a></li>
+                <li class="mobile-menu__item"><a href="#">HTML Academy</a></li>
               </ul>
-            </div>
-          </nav>
+
+            </nav>
+          </div>
         </div>
+
         <h1 class="page-header__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-      </div>
+
     </header>
 
-    <section class="form-info-main">
-      <p class="form-info-main__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
-      <form class="form-info" action="index.html" method="post">
-        <div class="form-info__feedback-form-group surname-area">
-          <label for="last-name">Фамилия:</label>
-          <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию">
+    <section class="page-form">
+
+      <form action="index.html" method="post">
+
+        <!--белый фон -->
+        <div class="page-form__block  page-form__block--bg-white">
+
+            <div class="container">
+
+                <p class="page-form__block-desc">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+
+                <label for="last-name">Фамилия:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
+
+                <label for="name">Имя:</label>
+                <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+
+                <label for="second-name">Ну и отчество:</label>
+                <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
+
+            </div>
+
         </div>
-        <div class="form-info__feedback-form-group name-area">
-          <label for="name">Имя:</label>
-          <input type="text" name="name" id="name" placeholder="Введите ваше имя">
-        </div>
-        <div class="form-info__feedback-form-group second-name-area">
-          <label for="second-name">Ну и отчество:</label>
-          <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
-        </div>
-        <div class="form-info__feedback-form-group checkbox-area">
-          <div class="checkbox-area__item">
-            <input id="selfie-with-shark" type="checkbox" name="selfie-with-shark" checked="">
+
+        <div class="page-form__block  page-form__block--bg-gray">
+
+          <div class="container">
+
+            <h2 class="page-form__block-title">Ваши безбашенные достижения в путешествии</h2>
+
+            <input id="selfie-with-shark" type="checkbox" name="selfie-with-shark" checked>
             <label for="selfie-with-shark"> Сделал селфи с акулой </label>
-          </div>
-          <div class="checkbox-area__item">
-            <input id="burned-on-the-beach" type="checkbox" name="burned-on-the-beach" checked="">
+
+            <input id="burned-on-the-beach" type="checkbox" name="burned-on-the-beach" checked>
             <label for="burned-on-the-beach"> Обгорел на пляже </label>
-          </div>
-          <div class="checkbox-area__item">
+
             <input id="saw-Chuck" type="checkbox" name="saw-Chuck">
             <label for="saw-Chuck"> Видел Чака Норриса </label>
-          </div>
-          <div class="checkbox-area__item">
+
             <input id="bought-souvenirs" type="checkbox" name="bought-souvenirs">
             <label for="bought-souvenirs"> Накупил сувениров </label>
-          </div>
-          <div class="checkbox-area__item">
+
             <input id="held-the-tower" type="checkbox" name="held-the-tower" checked="">
             <label for="held-the-tower"> Удержал башню </label>
-          </div>
-          <div class="checkbox-area__item">
+
             <input id="crushed-the-hotel" type="checkbox" name="crushed-the-hotel">
             <label for="crushed-the-hotel"> Разгромил отель</label>
+
           </div>
+
         </div>
-        <div class="form-info__feedback-form-group phone-area">
-            <label for="phone">Номерок телефончика:</label>
-            <input type="text" name="phone" id="phone" placeholder="Номерок, пожалуйста">
+        <div class="page-form__block  page-form__block--bg-white">
+
+          <div class="container">
+
+                <label for="phone">Номерок телефончика:</label>
+                <input type="text" name="phone" id="phone" placeholder="Номерок, пожалуйста">
+
+                <label for="email">Адресок почты: </label>
+                <input type="text" name="email" id="email" placeholder="Введите почту">
+
           </div>
-          <div class="form-info__feedback-form-group address-area">
-            <label for="email">Адресок почты: </label>
-            <input type="text" name="email" id="email" placeholder="Введите почту">
+
         </div>
-        <div class="form-info__feedback-form-group radio-btn-area">
-          <label class="radio-btn-area__item">
-          <input type="radio" name="first-option" value="Pink-for-ios" checked="">Pink для iOS
-          </label>
-          <label class="radio-btn-area__item">
-            <input type="radio" name="second-option" value="Pink-for-android">Pink на Android
-          </label>
-          <label class="radio-btn-area__item">
-            <input type="radio" name="third-option" value="Windows Phone">Windows Phone
-          </label>
+
+        <div class="page-form__block  page-form__block--bg-gray">
+
+          <div class="container">
+
+            <h2 class="page-form__block-title">С каким приложением путешествовали?</h2>
+
+              <input type="radio" name="platform" id="Pink-for-ios" checked>
+              <label for="Pink-for-ios">Pink для iOS</label>
+
+              <input type="radio" name="platform" id="Pink-for-android">
+              <label for="Pink-for-android">Pink на Android</label>
+
+              <input type="radio" name="platform" id="Windows Phone">
+              <label for="Windows Phone">Windows Phone</label>
+
+          </div>
+
         </div>
-        <div class="form-info__feedback-form-group textarea-area">
-          <label class="texarea-area__item" for="message">Опишите свои эмоции:</label>
-          <textarea name="message" id="message" cols="20" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
+        <div class="page-form__block  page-form__block--bg-white">
+
+          <div class="container">
+
+
+            <h2 class="page-form__block-title">Опишите свои эмоции</h2>
+            <textarea name="message" id="message" cols="20" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
+            <button class="submit-form-btn" type="submit" id="submit-btn">Отправить форму</button>
+
+            <div class="page-form__remark"><span>*</span> &mdash; обязательные поля</div>
+
+          </div>
+
         </div>
-        <div class="form-info__feedback-form-group submit-area">
-          <button class="btn" type="button" name="button">Отправить форму</button>
-        </div>
+
       </form>
-      <div class="form-info-main__remark">
-        * - обязательные поля
-      </div>
+
     </section>
 
     <footer class="page-footer">

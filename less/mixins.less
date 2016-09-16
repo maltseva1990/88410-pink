@@ -1,0 +1,17 @@
+.clearfix (){
+  &::after {
+    content:'';
+    display:table;
+    clear:both;
+  }
+}
+
+.include-custom-font(@family: 'Openn Sans', @weight: normal, @style: normal){
+  @font-face{
+    font-family: @family;
+    src:url('fonts/@{family}.woff');
+    src:url('fonts/@{family}.woff2') format('woff2 ');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}

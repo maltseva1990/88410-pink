@@ -3,90 +3,115 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__menu">
-          <a class="page-header__logo-link" href="#">PINK</a>
-          <nav class="main-nav main-nav--closed main-nav--no-js">
-            <button class="main-nav-toogle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__items">
-                <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
-                <li class="main-nav__item"><a href="#">Фотографии</a></li>
-                <li class="main-nav__item"><a href="#">Конкурс</a></li>
-                <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-              </ul>
-            </div>
+
+      <div class="page-header__top-menu clearfix">
+        <div class="container">
+          <div class="logo">Pink</div>
+
+          <button class="menu-toggle">Меню</button>
+
+          <nav class="mobile-menu">
+
+            <ul class="mobile-menu__items">
+              <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active" href="#">Главная</a></li>
+              <li class="mobile-menu__item"><a href="#">Фотографии</a></li>
+              <li class="mobile-menu__item"><a href="#">Конкурс</a></li>
+              <li class="mobile-menu__item"><a href="#">HTML Academy</a></li>
+            </ul>
+
           </nav>
         </div>
-        <h1 class="page-header__title">Фотографии пользователей</h1>
       </div>
+
+      <h1 class="page-header__title">Фотографии пользователей</h1>
+
     </header>
 
     <section class="photos">
-      <div class="photos__wrapper">
-        <p> Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+
+      <div class="container">
+
+        <p class="photos__block-desc"> Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+
         <div class="photos__items">
-          <div class="item-desc">
-            <a href="#"><img src="#" width="200" height="100" alt=""></a>
-            <a class="item-desc__name" href="#">Анна</a>
-            <span class="item-desc__time-ago">(5 минут назад)</span>
-            <p class="item-desc__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">215</span></div>
+
+
+          <a href="#"><img src="img/panorama-mobile@1x.jpg" width="100%" height="100%" alt=""></a>
+          <div class="photos__item-desc">
+            <a class="photos__name" href="#">Анна</a>
+            <span class="photos__time-ago">(5 минут назад)</span>
+            <p class="photos__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
           </div>
-          <div class="item-desc">
-            <a href="#"><img src="#" width="200" height="100" alt=""></a>
-            <a class="item-desc__name" href="#">Левон</a>
-            <span class="item-desc__time-ago">(5 часов назад)</span>
-            <p class="item-desc__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">356</span></div>
+
+
+          <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+          <div class="photos__item-desc">
+            <a class="photos__name" href="#">Левон</a>
+            <span class="photos__time-ago">(5 часов назад)</span>
+            <p class="photos__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 356</span></div>
           </div>
-          <div class="item-desc">
-            <a href="#"><img src="#" width="200" height="100" alt=""></a>
-            <a class="item-desc__name" href="#">Антон</a>
-            <span class="item-desc__time-ago">(12 часов назад)</span>
-            <p class="item-desc__message">Соседи будут рады.</p>
-            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">566</span></div>
+
+
+          <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+          <div class="photos__item-desc">
+            <a class="photos__name" href="#">Антон</a>
+            <span class="photos__time-ago">(12 часов назад)</span>
+            <p class="photos__message">Соседи будут рады.</p>
+            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 566</span></div>
           </div>
-          <div class="item-desc">
-            <a href="#"><img src="#" width="200" height="100" alt=""></a>
-            <a class="item-desc__name" href="#">Борис</a>
-            <span class="item-desc__time-ago">(20 часов назад)</span>
-            <p class="item-desc__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">215</span></div>
+
+
+          <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+          <div class="photos__item-desc">
+            <a class="photos__name" href="#">Борис</a>
+            <span class="photos__time-ago">(20 часов назад)</span>
+            <p class="photos__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
           </div>
-          <div class="item-desc">
-            <a href="#"><img src="#" width="200" height="100" alt=""></a>
-            <a class="item-desc__name" href="#">Сергей</a>
-            <span class="item-desc__time-ago">(25 часов назад)</span>
-            <p class="item-desc__message">Самая кубанская в мире!</p>
-            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">4</span></div>
+
+
+          <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+          <div class="photos__item-desc">
+            <a class="photos__name" href="#">Сергей</a>
+            <span class="photos__time-ago">(25 часов назад)</span>
+            <p class="photos__message">Самая кубанская в мире!</p>
+            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 4</span></div>
           </div>
-          <div class="item-desc">
-            <a href="#"><img src="#" width="200" height="100" alt=""></a>
-            <a class="item-desc__name" href="#">Максим</a>
-            <span class="item-desc__time-ago">(40 часов назад)</span>
-            <p class="item-desc__message">Где снег-то?</p>
-            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">150</span></div>
+
+
+          <a href="#"><img src="img/photo-5-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+          <div class="photos__item-desc">
+            <a class="photos__name" href="#">Максим</a>
+            <span class="photos__time-ago">(40 часов назад)</span>
+            <p class="photos__message">Где снег-то?</p>
+            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 150</span></div>
           </div>
-          <div class="item-desc">
-            <a href="#"><img src="#" width="200" height="100" alt=""></a>
-            <a class="item-desc__name" href="#">Надежда</a>
-            <span class="item-desc__time-ago">(45 часов назад)</span>
-            <p class="item-desc__message">Всем GM и взаимные лайки!</p>
-            <div class="item-desc__controls-like">Нравится <span class="item-desc__likes-count">2560</span></div>
+
+
+          <a href="#"><img src="img/photo-6-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+          <div class="photos__item-desc">
+            <a class="photos__name" href="#">Надежда</a>
+            <span class="photos__time-ago">(45 часов назад)</span>
+            <p class="photos__message">Всем GM и взаимные лайки!</p>
+            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 2560</span></div>
           </div>
+
         </div>
       </div>
     </section>
 
     <section class="new-user-photo">
-      <div class="new-user-photo__wrapper">
-        <p class="new-user-photo__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="container">
+
+        <p class="photos__block-desc">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload-form upload-image" id="upload-select-image" method="post" enctype="multipart/form-data">
-          <img src="" class="upload-image__filter-image-preview" width="100" height="200">
+          <img src="img/photo-7-mobile@1x.jpg" class="upload-image__filter-image-preview" width="90%" height="90%">
 
           <fieldset class="upload-form__upload-filter-controls">
 
