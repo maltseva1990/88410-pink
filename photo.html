@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=320">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -12,7 +13,7 @@
         <div class="container">
           <div class="logo">Pink</div>
 
-          <button class="menu-toggle">Меню</button>
+          <button class="menu-toggle menu-toggle--active" type="submit"><img src="img/icon-menu-burger.svg" alt=""></button>
 
           <nav class="mobile-menu">
 
@@ -27,7 +28,9 @@
         </div>
       </div>
 
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <div class="container">
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
 
     </header>
 
@@ -45,7 +48,7 @@
             <a class="photos__name" href="#">Анна</a>
             <span class="photos__time-ago">(5 минут назад)</span>
             <p class="photos__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
+            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
           </div>
 
 
@@ -54,7 +57,7 @@
             <a class="photos__name" href="#">Левон</a>
             <span class="photos__time-ago">(5 часов назад)</span>
             <p class="photos__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 356</span></div>
+            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 356</span></div>
           </div>
 
 
@@ -63,7 +66,7 @@
             <a class="photos__name" href="#">Антон</a>
             <span class="photos__time-ago">(12 часов назад)</span>
             <p class="photos__message">Соседи будут рады.</p>
-            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 566</span></div>
+            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 566</span></div>
           </div>
 
 
@@ -72,7 +75,7 @@
             <a class="photos__name" href="#">Борис</a>
             <span class="photos__time-ago">(20 часов назад)</span>
             <p class="photos__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
+            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
           </div>
 
 
@@ -81,7 +84,7 @@
             <a class="photos__name" href="#">Сергей</a>
             <span class="photos__time-ago">(25 часов назад)</span>
             <p class="photos__message">Самая кубанская в мире!</p>
-            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 4</span></div>
+            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 4</span></div>
           </div>
 
 
@@ -90,7 +93,7 @@
             <a class="photos__name" href="#">Максим</a>
             <span class="photos__time-ago">(40 часов назад)</span>
             <p class="photos__message">Где снег-то?</p>
-            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 150</span></div>
+            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 150</span></div>
           </div>
 
 
@@ -99,7 +102,7 @@
             <a class="photos__name" href="#">Надежда</a>
             <span class="photos__time-ago">(45 часов назад)</span>
             <p class="photos__message">Всем GM и взаимные лайки!</p>
-            <div class="item-desc__controls-like"><span class="photos__likes-count">Нравится: 2560</span></div>
+            <div class="photos_controls-like"><span class="photos__likes-count">Нравится: 2560</span></div>
           </div>
 
         </div>
@@ -138,7 +141,7 @@
           </div>
 
           <button class="upload-form__upload-submit upload-control" type="submit">Запостить</button>
-          <button class="upload-form__no-upload-submit no-upload-control">Отмена</button>
+          <button class="upload-form__no-upload-submit no-upload-control" type="submit">Отмена</button>
 
         </form>
       </div>

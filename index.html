@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=320">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,15 +16,15 @@
       <div class="container clearfix">
         <div class="logo"><a href="index.html"  class="logo__link">Pink</a></div>
 
-        <button class="menu-toggle">Меню</button>
+        <button class="menu-toggle menu-toggle--active" type="submit"><img src="img/icon-menu-burger.svg" alt=""></button>
 
-        <nav class="mobile-menu main-nav--closed main-nav--no-js">
+        <nav class="mobile-menu mobile-menu--closed mobile-menu--no-js">
 
             <ul class="mobile-menu__items">
               <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active" href="index.html">Главная</a></li>
               <li class="mobile-menu__item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+              <li class="mobile-menu__item"><a href="form.html">Конкурс</a></li>
+              <li class="mobile-menu__item"><a href="#">HTML Academy</a></li>
             </ul>
 
         </nav>
@@ -32,9 +33,7 @@
 
     <div class="page-header__content">
       <div class="container clearfix">
-        <div class="container--to-left">
-          <!-- h1 class="page-header__title">Взгляните на жизнь иначе!</h1> -->
-        </div>
+        <div class=""> <h1 class="page-header__title page-header__title-index">Взгляните на жизнь иначе!</h1></div>
       </div>
     </div>
 
@@ -82,7 +81,7 @@
     </div>
 
     <section class="reviews">
-      <div class="container slider-controls">
+      <div class="reviews__inner slider-controls">
 
         <!-- Невидимые радиобаттоны  -->
         <input type="radio" name="review-toggle" id="reviews-1">
