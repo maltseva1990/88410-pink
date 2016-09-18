@@ -1,0 +1,25 @@
+/* фоновые картинки хедера для главной */
+
+@media (max-width: @breakpoint-phone) {
+  .page-header {
+    background-image: url('../img/bg-back-mobile@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center 65px;
+
+    &__content {
+      background-image: url('../img/iphone-hand-mobile@1x.png');
+      background-repeat: no-repeat;
+      background-position: left bottom;
+    }
+  }
+}
+
+/* фоновая картинка с улыбающимся смартфоном в блоке features на главной */
+@media (max-width: @breakpoint-phone) {
+  .features {
+    background-image: url('../img/iphone-screen-mobile@1x.png');
+    background-repeat: no-repeat;
+    background-size: 160px auto;
+    background-position: center bottom -45px;
+  }
+}

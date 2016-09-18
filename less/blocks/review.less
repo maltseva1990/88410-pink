@@ -1,0 +1,31 @@
+.review {
+  /* display: none;*/
+  padding: 45px 0 0 0;
+
+  &__author {
+    margin: 0;
+    margin-bottom: 12px;
+    font: @weight-bold @font-size--medium @font;
+    letter-spacing: 0.5px;
+  }
+
+  /* текст отзыва */
+  &__text {
+    color: @darkblue;
+    margin: 0;
+    margin-bottom: 30px;
+    font:@weight-normal @font-size--small @font;
+    line-height: @line-height;
+  }
+}
+/* переключение слайдов */
+
+#review-1:checked ~ .slide-1 {
+  display: block;
+}
+#review-2:checked ~ .slide-2 {
+  display: block;
+}
+#review-3:checked ~ .slide-3 {
+  display: block;
+}
