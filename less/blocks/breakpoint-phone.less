@@ -2,24 +2,60 @@
 
 @media (max-width: @breakpoint-phone) {
   .page-header {
-    background-image: url('../img/bg-back-mobile@1x.jpg');
-    background-repeat: no-repeat;
-    background-position: center 65px;
+    background: url('../../img/bg-back-mobile@1x.jpg') no-repeat center 255px;
 
     &__content {
-      background-image: url('../img/iphone-hand-mobile@1x.png');
-      background-repeat: no-repeat;
-      background-position: left bottom;
+      background: url('../../img/iphone-hand-mobile@1x.png') no-repeat left bottom;
+
     }
   }
 }
 
+
+
 /* фоновая картинка с улыбающимся смартфоном в блоке features на главной */
 @media (max-width: @breakpoint-phone) {
   .features {
-    background-image: url('../img/iphone-screen-mobile@1x.png');
+    background-image: url('../../img/iphone-screen-mobile@1x.png');
     background-repeat: no-repeat;
     background-size: 160px auto;
     background-position: center bottom -45px;
   }
 }
+@media (min-width: 480px) {
+  .features {
+    background-image: url('../../img/iphone-screen-mobile@1x.png');
+    background-repeat: no-repeat;
+    background-size: 260px auto;
+    background-position: center top-6px;
+  }
+
+}
+
+@media @tablet-widths {
+  .page-header{
+    background: url('../../img/bg-iphone-6-hand.jpg') no-repeat center 255px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: @darkblue;
+    padding-bottom: 200px;
+  }
+
+}
+
+
+@media @desktop-widths {
+  .page-header{
+    background: url('../../img/desktop-hand-bg.jpg') no-repeat center 255px;
+    background-repeat: no-repeat;
+    background-position: right -100px;
+
+  }
+
+  .features {
+    background-image: none;
+
+  }
+
+}
+

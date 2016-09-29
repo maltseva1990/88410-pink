@@ -1,10 +1,261 @@
-.page-form {
-  &__block--bg-white{
+.page-form__temp-mobile {
+  display: none;
+}
+.page-form__block-desc {
+  padding: 20px;
+}
+.page-form__block input {
+  padding: 15px 50px 15px 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: @black;
+  font-size: @font-size--medium;
+}
+.page-form__block label {
+  font-size: @font-size--small;
+  color: @fuchsia;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.page-form__block--bg-gray {
+  .container();
+  .clearfix();
+  background: @gray;
+}
+.page-form__block--bg-white {
+  background: @white;
+  .container();
+  .clearfix();
+}
+.page-form__block-title {
+  color: @fuchsia;
+  text-transform: uppercase;
+  font: @weight-normal @font-size--small @font;
+  padding-top: 40px;
+}
+
+.page-form__achievement label {
+  color: @darkblue;
+  text-transform: none;
+  font: @weight-normal @font-size--medium @font;
+  width: 400px;
+}
+.page-form__achievement li{
+  display: inline-block;
+  list-style-type: none;
+  padding-bottom: 40px;
+}
+.page-form__apps-list li{
+  list-style: none;
+
+}
+.page-form__apps-travel label {
+  color: @darkblue;
+  text-transform: none;
+  font: @weight-normal @font-size--medium @font;
+}
+.page-form__emotions textarea {
+  font: @weight-normal @font-size--medium @font;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  color: @darkblue;
+}
+.submit-form-btn {
+  background-color: @green-btn;
+  padding: 20px 50px 20px 50px;
+  margin-bottom: 40px;
+  color: @white;
+  font: @weight-bold @font-size--medium @font;
+  border: none;
+  border-radius: 3px;
+
+}
+
+.page-form__remark {
+  text-transform: uppercase;
+  font: @weight-normal @font-size--small @font;
+  color: @darkblue;
+}
+
+.page-form__remark span {
+  color: @fuchsia;
+}
+.page-footer__logo-wrap {
+  margin-top: 40px;
+}
+@media @tablet-widths {
+  .page-form__temp-mobile {
+    display: block;
+  }
+  .page-form__block--bg-gray{
     background: @white;
   }
-  &__block-desc {
-    color: @darkblue;
+  .page-form__temp {
+    display: none;
+  }
+  .pink-form-mobile .page-header__title {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .page-form__title-contact-info {
     font: @weight-normal @font-size--small @font;
+    text-transform: uppercase;
+    color: @fuchsia;
+    text-align: center;
+  }
+  .pink-form-mobile .logo__link{
+    font-size: 150%;
+    margin-left: 20px;
+  }
+
+  .page-form__block-desc {
+    font: @weight-normal @font-size--medium @font;
     line-height: @line-height;
+    width: 500px;
+    margin: 0 auto;
+  }
+  .page-form__group {
+    display: inline-block;
+    vertical-align: top;
+    width: 640px;
+  }
+  .page-form__group label {
+    width: 10%;
+  }
+  .page-form__group input {
+    width: 60%;
+    padding-left: 10px;
+    font: @weight-normal @font-size--medium @font;
+  }
+  .page-form__block-title {
+    text-align: center;
+  }
+  .page-form__apps-travel {
+    text-align: left;
+  }
+  .page-form__emotions textarea {
+   width: 600px;
+  }
+  .page-form__emotions .submit-form-btn {
+    float:left;
+    width: 300px;
+    padding: 20px 15px 20px 15px;
+
+  }
+   .page-form__remark {
+    float: right;
+    width: 300px;
+  }
+  .page-form__achievement li {
+    display: inline-flex;
+    text-align: left;
+  }
+  .page-form__contact {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+
+  }
+  .page-form__contact input {
+    width:60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .page-form__contact label {
+    margin-left: 20%;
+  }
+
+}
+
+@media @desktop-widths {
+  .pink-form-mobile .page-header{
+    background: @darkblue;
+    padding-bottom: 80px;
+  }
+  .page-form__block-desc {
+    width:780px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .page-form__apps-wrapper {
+    float: right;
+    width:400px;
+    position: absolute;
+    margin-left: 500px;
+
+  }
+  .page-form__contacts{
+    float: left;
+    width:480px;
+  }
+
+  .page-form__group input, label {
+    padding: 0;
+    display: inline-block;
+  }
+  .page-form__group label {
+    padding: 0;
+    margin-left: -200px;
+  }
+  .page-form__group input {
+    padding: 0;
+    margin-left: 50px;
+    padding: 10px;
+  }
+  .page-form__user-contacts {
+    width: 470px;
+    float: left;
+  }
+  .page-form__user-contacts input {
+    width:40%;
+  }
+  .page-form__user-contacts label {
+    padding: 0;
+  }
+  .page-form__contacts {
+    width:940px;
+  }
+  .page-form__contact {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width:450px;
+  }
+  .page-form__contact input {
+    margin:  0;
+  }
+  .page-form__block-main-contacts {
+    width: 940px;
+  }
+  .page-form__title-contact-info {
+    font: @weight-normal @font-size--small @font;
+    text-transform: uppercase;
+    color: @fuchsia;
+    text-align: center;
+  }
+
+  .page-form__phone {
+    display: inline-block;
+  }
+  .page-form__mail {
+    display: inline-block;
+  }
+  .page-form__achievements-list li {
+    display: inline-flex;
+    width: 260px;
+  }
+  .page-form__emotions textarea {
+    width: 815px;
+  }
+  .submit-form-btn {
+    margin-left: 60px;
+  }
+   .page-form__remark {
+   width: 420px;
   }
 }
+
+

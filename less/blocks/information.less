@@ -1,8 +1,14 @@
 .information {
-  background-image: url("../img/");
+  background: @white;
 &__text{
   color: @darkblue;
-  font: @weight-light @font-size--big @font;
+  font: @weight-light @font-size--medium @font;
   text-align: center;
 }
+}
+@media @desktop-widths {
+  .information__text {
+    font: @weight-light 50px @font;
+
+  }
 }

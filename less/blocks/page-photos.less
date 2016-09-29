@@ -1,0 +1,108 @@
+.photos{
+  .photos__block--bg-white{
+    background: @white;
+  }
+  .photos__block-desc {
+    color: @darkblue;
+    font: @weight-normal @font-size--small @font;
+    line-height: @line-height;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+  }
+  .photos__item-desc {
+    color: @darkblue;
+    background: @gray;
+    position: relative;
+    left: 0%;
+    width: 87%;
+    text-align: left;
+    display: inline-block;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .photos__name {
+    color: @darkblue;
+    font: @weight-bold @font-size--small @font;
+    text-decoration: @text-decoration;
+  }
+
+  .photos__time-ago {
+    color: @darkblue;
+    text-transform: uppercase;
+    font: @weight-light @font-size--small @font;
+    line-height: @line-height--p;
+  }
+  .photos__message {
+    colpr: @darkblue;
+    line-height: @line-height;
+    font: @weight-normal @font-size--small @font;
+  }
+  .photos__likes-count {
+    color: @fuchsia;
+    text-transform: uppercase;
+    font: @weight-normal @font-size--very-small @font;
+  }
+}
+@media @tablet-widths {
+   .page-header__title {
+    padding: 50px;
+  }
+  .photos__block-desc {
+    font: @weight-normal @font-size--medium @font;
+    line-height: @line-height;
+    margin: 50px 100px 50px 100px;
+  }
+  .photos__item {
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 20px;
+  }
+  .photos__item-desc {
+    margin:0 auto;
+  }
+
+  .upload-form__left {
+    float: left;
+    width: 305px;
+  }
+  .upload-form__right {
+    float: right;
+    width: 270px;
+    height: 500px; // временно
+  }
+  .btn-photo {
+    display: block;
+    padding: 15px 50px 15px 50px;
+    border-radius: 10px;
+    background: transparent;
+  }
+  .upload-form__upload-submit {
+    border: 5px solid @fuchsia;
+    color: @fuchsia;
+  }
+  .upload-form__no-upload-submit {
+    border: 5px solid @gray;
+    color: @gray;
+  }
+  .upload-form__no-upload-submit {
+
+  }
+}
+@media @desktop-widths {
+  .page-photo .page-header {
+    background: @darkblue;
+  }
+  .photos__item img{
+    width: 300px;
+    height: 400px;
+  }
+  .upload-form__left {
+    width: 450px;
+  }
+  .upload-form__right {
+    width: 450px;
+    height: 600px; // временно
+  }
+}

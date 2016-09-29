@@ -2,36 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=320">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page-photo">
     <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__top-menu clearfix">
+          <div class="container clearfix">
+            <div class="page-header--bg-for-nav">
+              <div class="logo"><a href="index.html"  class="logo__link">Pink</a></div>
 
-      <div class="page-header__top-menu clearfix">
-        <div class="container">
-          <div class="logo">Pink</div>
+              <button class="menu-toggle menu-toggle--active" type="submit"><img src="img/icon-menu-burger.svg" alt=""></button>
+            </div>
+            <nav class="main-nav mobile-menu--closed mobile-menu--no-js">
 
-          <button class="menu-toggle menu-toggle--active" type="submit"><img src="img/icon-menu-burger.svg" alt=""></button>
+              <ul class="main-nav__items">
+                <li class="main-nav__item"><a class="main-nav__link mobile-menu__link--active" href="index.html">Главная</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+              </ul>
 
-          <nav class="mobile-menu">
+            </nav>
+          </div>
 
-            <ul class="mobile-menu__items">
-              <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active" href="#">Главная</a></li>
-              <li class="mobile-menu__item"><a href="#">Фотографии</a></li>
-              <li class="mobile-menu__item"><a href="#">Конкурс</a></li>
-              <li class="mobile-menu__item"><a href="#">HTML Academy</a></li>
-            </ul>
-
-          </nav>
+        </div>
+        <div class="page-header__title-wrapper">
+          <h1 class="page-header__title page-header__title-index">Фотографии пользователей</h1>
         </div>
       </div>
-
-      <div class="container">
-        <h1 class="page-header__title">Фотографии пользователей</h1>
-      </div>
-
     </header>
 
     <section class="photos">
@@ -43,68 +45,68 @@
         <div class="photos__items">
 
 
-          <a href="#"><img src="img/panorama-mobile@1x.jpg" width="100%" height="100%" alt=""></a>
-          <div class="photos__item-desc">
-            <a class="photos__name" href="#">Анна</a>
-            <span class="photos__time-ago">(5 минут назад)</span>
-            <p class="photos__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
+            <a href="#"><img src="img/panorama-mobile@1x.jpg" width="100%" height="100%" alt=""></a>
+            <div class="photos__item-desc">
+              <a class="photos__name" href="#">Анна</a>
+              <span class="photos__time-ago">(5 минут назад)</span>
+              <p class="photos__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
+            </div>
+
+          <div class="photos__item">
+            <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+            <div class="photos__item-desc">
+              <a class="photos__name" href="#">Левон</a>
+              <span class="photos__time-ago">(5 часов назад)</span>
+              <p class="photos__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 356</span></div>
+            </div>
           </div>
-
-
-          <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
-          <div class="photos__item-desc">
-            <a class="photos__name" href="#">Левон</a>
-            <span class="photos__time-ago">(5 часов назад)</span>
-            <p class="photos__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 356</span></div>
+          <div class="photos__item">
+            <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+            <div class="photos__item-desc">
+              <a class="photos__name" href="#">Антон</a>
+              <span class="photos__time-ago">(12 часов назад)</span>
+              <p class="photos__message">Соседи будут рады.</p>
+              <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 566</span></div>
+            </div>
           </div>
-
-
-          <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
-          <div class="photos__item-desc">
-            <a class="photos__name" href="#">Антон</a>
-            <span class="photos__time-ago">(12 часов назад)</span>
-            <p class="photos__message">Соседи будут рады.</p>
-            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 566</span></div>
+          <div class="photos__item">
+            <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+            <div class="photos__item-desc">
+              <a class="photos__name" href="#">Борис</a>
+              <span class="photos__time-ago">(20 часов назад)</span>
+              <p class="photos__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
+            </div>
           </div>
-
-
-          <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
-          <div class="photos__item-desc">
-            <a class="photos__name" href="#">Борис</a>
-            <span class="photos__time-ago">(20 часов назад)</span>
-            <p class="photos__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 215</span></div>
+          <div class="photos__item">
+            <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+            <div class="photos__item-desc">
+              <a class="photos__name" href="#">Сергей</a>
+              <span class="photos__time-ago">(25 часов назад)</span>
+              <p class="photos__message">Самая кубанская в мире!</p>
+              <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 4</span></div>
+            </div>
           </div>
-
-
-          <a href="#"><img src="img/photo-4-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
-          <div class="photos__item-desc">
-            <a class="photos__name" href="#">Сергей</a>
-            <span class="photos__time-ago">(25 часов назад)</span>
-            <p class="photos__message">Самая кубанская в мире!</p>
-            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 4</span></div>
+          <div class="photos__item">
+            <a href="#"><img src="img/photo-5-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+            <div class="photos__item-desc">
+              <a class="photos__name" href="#">Максим</a>
+              <span class="photos__time-ago">(40 часов назад)</span>
+              <p class="photos__message">Где снег-то?</p>
+              <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 150</span></div>
+            </div>
           </div>
-
-
-          <a href="#"><img src="img/photo-5-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
-          <div class="photos__item-desc">
-            <a class="photos__name" href="#">Максим</a>
-            <span class="photos__time-ago">(40 часов назад)</span>
-            <p class="photos__message">Где снег-то?</p>
-            <div class="photos__controls-like"><span class="photos__likes-count">Нравится: 150</span></div>
+          <div class="photos__item">
+            <a href="#"><img src="img/photo-6-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
+            <div class="photos__item-desc">
+              <a class="photos__name" href="#">Надежда</a>
+              <span class="photos__time-ago">(45 часов назад)</span>
+              <p class="photos__message">Всем GM и взаимные лайки!</p>
+              <div class="photos_controls-like"><span class="photos__likes-count">Нравится: 2560</span></div>
+            </div>
           </div>
-
-
-          <a href="#"><img src="img/photo-6-mobile@1x.jpg" width="90%" height="90%" alt=""></a>
-          <div class="photos__item-desc">
-            <a class="photos__name" href="#">Надежда</a>
-            <span class="photos__time-ago">(45 часов назад)</span>
-            <p class="photos__message">Всем GM и взаимные лайки!</p>
-            <div class="photos_controls-like"><span class="photos__likes-count">Нравится: 2560</span></div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -113,41 +115,45 @@
       <div class="container">
 
         <p class="photos__block-desc">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <form class="upload-form upload-image" id="upload-select-image" method="post" enctype="multipart/form-data">
-          <img src="img/photo-7-mobile@1x.jpg" class="upload-image__filter-image-preview" width="90%" height="90%">
-
-          <fieldset class="upload-form__upload-filter-controls">
-
-            <input type="radio" name="upload-filter" id="upload-filter-none" value="none" checked>
-            <label class="upload-filter-label" for="upload-filter-none"></label>
-
-            <input type="radio" name="upload-filter" id="upload-filter-cadr" value="cadr" checked>
-            <label class="upload-filter-label" for="upload-filter-cadr"></label>
-
-            <input type="radio" name="upload-filter" id="upload-filter-fill" value="fill">
-            <label class="upload-filter-label upload-filter-label-chrome" for="upload-filter-fill">Заливка
-          </label>
-
-            <input type="radio" name="upload-filter" id="upload-filter-contrast" value="contrast">
-            <label class="upload-filter-label upload-filter-label-contrast" for="upload-filter-contrast">Контраст
-            </label>
-          </fieldset>
-
-          <div class="upload-form__range-filter">
-            <div class="upload-form___range-controls">
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+        <div class="form-wrapper">
+          <form class="upload-form upload-image" id="upload-select-image" method="post" enctype="multipart/form-data">
+            <div class="upload-form__left">
+              <img src="img/photo-7-mobile@1x.jpg" class="upload-image__filter-image-preview" width="90%" height="90%">
             </div>
-          </div>
+            <div class="upload-form__right">
+              <fieldset class="upload-form__upload-filter-controls">
 
-          <button class="upload-form__upload-submit upload-control" type="submit">Запостить</button>
-          <button class="upload-form__no-upload-submit no-upload-control" type="submit">Отмена</button>
+                <input type="radio" name="upload-filter" id="upload-filter-none" value="none" checked>
+                <label class="upload-filter-label" for="upload-filter-none"></label>
 
-        </form>
+                <input type="radio" name="upload-filter" id="upload-filter-cadr" value="cadr" checked>
+                <label class="upload-filter-label" for="upload-filter-cadr"></label>
+
+                <input type="radio" name="upload-filter" id="upload-filter-fill" value="fill">
+                <label class="upload-filter-label upload-filter-label-chrome" for="upload-filter-fill">Заливка
+              </label>
+
+                <input type="radio" name="upload-filter" id="upload-filter-contrast" value="contrast">
+                <label class="upload-filter-label upload-filter-label-contrast" for="upload-filter-contrast">Контраст
+                </label>
+              </fieldset>
+
+              <div class="upload-form__range-filter">
+                <div class="upload-form___range-controls">
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
+                </div>
+              </div>
+
+              <button class="upload-form__upload-submit btn-photo upload-control" type="submit">Запостить</button>
+              <button class="upload-form__no-upload-submit btn-photo no-upload-control" type="submit">Отмена</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
-    <footer class="page-footer">
+    <footer class="page-footer container clearfix">
       <div class="page-footer__logo-wrap">
         <a href=""><img src="#" width="100" height="50" alt="Pink"></a>
       </div>
