@@ -13,7 +13,7 @@
 
 
 
-/* фоновая картинка с улыбающимся смартфоном в блоке features на главной */
+/* фоновая картинка с улыбающимся смартфоном в блоке features на главной
 @media (max-width: @breakpoint-phone) {
   .features {
     background-image: url('../../img/iphone-screen-mobile@1x.png');
@@ -30,7 +30,7 @@
     background-position: center top-6px;
   }
 
-}
+}*/
 
 @media @tablet-widths {
   .page-header{
@@ -40,7 +40,14 @@
     background-color: @darkblue;
     padding-bottom: 200px;
   }
-
+  .page-photo .page-header{
+    background-image: url('../img/bg-back-tablet@1x.jpg');
+    background-repeat: no-repeat;
+  }
+  .pink-form-mobile .page-header{
+    background-image: url('../img/bg-back-tablet@1x.jpg');
+    background-repeat: no-repeat;
+  }
 }
 
 
@@ -51,7 +58,14 @@
     background-position: right -100px;
 
   }
-
+  .page-photo .page-header{
+    background-image: url('../img/bg-back-desktop@1x.jpg');
+    background-repeat: no-repeat;
+  }
+  .pink-form-mobile .page-header{
+    background-image: url('../img/bg-back-desktop@1x.jpg');
+    background-repeat: no-repeat;
+  }
   .features {
     background-image: none;
   }

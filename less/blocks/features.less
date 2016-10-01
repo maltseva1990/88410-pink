@@ -3,29 +3,35 @@
   position: relative;
   padding: 55px 0 286px 0;
 
+  background-color: @gray;
+  background-image: url('../../img/iphone-screen-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-size: 160px auto;
+  background-position: center bottom -45px;
+
 
   @media @tablet-widths {
     width: 700px;
     text-align: left;
     margin:  0 auto;
     padding: 55px 0 26px 0;
-    background: @gray;
-
+    background-size: 260px auto;
+    background-position: left top;
   }
 
   @media @desktop-widths {
     width: 1200px;
     margin: 0 auto;
+    background-image: none;
   }
 }
+
 .features--for-desk {
   display: none;
-}
-@media @desktop-widths {
-  .features--for-all {
-    display: none;
-  }
-  .features--for-desk {
-    display: block;
+
+  @media @desktop-widths{
+    .features--for-desk {
+      display: block;
+    }
   }
 }
