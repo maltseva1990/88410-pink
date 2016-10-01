@@ -1,9 +1,8 @@
 .menu-toggle {
   display: block;
   position: absolute;
-  top: 50%;
   right: 20px;
-  margin-top: -3px;
+  margin-top: 10px;
   padding: 0;
   float: right;
   width: 50px;
@@ -12,21 +11,13 @@
   outline: none;
   border-radius: 0;
   font-size: 0;
-  cursor: pointer;
 
   &:hover {
     opacity: 0.4;
   }
 
-  &--active {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -2px;
-    font-size: 0;
-    border: none;
-    outline: none;
-    background-image: url('../../img/icon-menu-cross.svg');
+  @media @desktop-widths {
+    display: none;
   }
-}
 
+}

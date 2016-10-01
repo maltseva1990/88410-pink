@@ -1,7 +1,9 @@
 .downloads {
   padding: 30px 0;
   padding-top: 0;
+  padding-bottom: 0;
   background-color: @darkblue--header;
+
 
   /* кнопка "скачать приложение"" */
   &__btn {
@@ -40,5 +42,26 @@
     margin: 0;
     padding: 0 20px;
     font: @weight-light @font-size--small @font;
+  }
+}
+
+@media @tablet-widths {
+  .downloads {
+    padding: 0;
+
+  }
+  .downloads__wrapper{
+    background: transparent;
+    float: left;
+    width: 300px;
+    padding: 0;
+  }
+}
+
+@media @desktop-widths {
+  .downloads{
+  background: transparent;
+  padding: 50px;
+  padding-bottom: 0
   }
 }

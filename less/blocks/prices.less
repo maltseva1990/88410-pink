@@ -1,12 +1,11 @@
 /* слайдер с ценами */
 .prices {
-  position: relative;
+
   padding: 63px 0 55px 0;
   background-color: @gray;
 
   &__wrapper {
     margin-bottom: 43px;
-    width: 100%;
     overflow: hidden;
   }
 
@@ -100,5 +99,10 @@
       transform: rotate(45deg);
     }
   }
+  @media @tablet-widths {
+    .container();
+    .prices__table {
+      width:100%;
+    }
+  }
 }
-
