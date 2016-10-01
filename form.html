@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -46,51 +46,51 @@
       <form action="index.html" method="post">
 
         <div class="page-form__block page-form__contacts page-form__block--bg-white">
+           <div class="page-form__main-contacts container clearfix">
 
-            <div class="container page-form__user-contacts">
+             <div class="container page-form__user-contacts">
 
+                  <div class="page-form__group">
+                    <label for="last-name">Фамилия:</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
+                  </div>
+                  <div class="page-form__group">
+                    <label for="name">Имя:</label>
+                    <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+                  </div>
+                  <div class="page-form__group">
+                    <label for="second-name">Отчество:</label>
+                    <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
+                  </div>
+              </div>
 
-                <div class="page-form__group">
-                  <label for="last-name">Фамилия:</label>
-                  <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
-                </div>
-                <div class="page-form__group">
-                  <label for="name">Имя:</label>
-                  <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
-                </div>
-                <div class="page-form__group">
-                  <label for="second-name">Отчество:</label>
-                  <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
-                </div>
+          <div class="page-form__block page-form__apps-wrapper page-form__block--bg-gray page-form__temp-mobile">
+
+            <div class="page-form__apps-travel ">
+
+              <h2 class="page-form__block-title">С каким приложением путешествовали?</h2>
+              <ul class="page-form__apps-list">
+                <li>
+                  <input type="radio" name="platform" id="Pink-for-ios1" checked>
+                  <label for="Pink-for-ios1">Pink для iOS</label>
+                </li>
+                <li>
+                  <input type="radio" name="platform" id="Pink-for-android1">
+                  <label for="Pink-for-android1">Pink на Android</label>
+                </li>
+                <li>
+                  <input type="radio" name="platform" id="Windows Phone1">
+                  <label for="Windows Phone1">Windows Phone</label>
+                </li>
+              </ul>
             </div>
-
-        </div>
-
-        <div class="page-form__block page-form__apps-wrapper page-form__block--bg-gray page-form__temp-mobile">
-
-          <div class="page-form__apps-travel ">
-
-            <h2 class="page-form__block-title">С каким приложением путешествовали?</h2>
-            <ul class="page-form__apps-list">
-              <li>
-                <input type="radio" name="platform" id="Pink-for-ios1" checked>
-                <label for="Pink-for-ios1">Pink для iOS</label>
-              </li>
-              <li>
-                <input type="radio" name="platform" id="Pink-for-android1">
-                <label for="Pink-for-android1">Pink на Android</label>
-              </li>
-              <li>
-                <input type="radio" name="platform" id="Windows Phone1">
-                <label for="Windows Phone1">Windows Phone</label>
-              </li>
-            </ul>
           </div>
 
+         </div>
         </div>
 
         <div class="page-form__block page-form__block-main-contacts page-form__block--bg-white page-form__temp-mobile">
-          <div class="">
+          <div class="container clearfix">
 
             <div class="page-form__contacts">
               <h5 class="page-form__title-contact-info">Контактная информация</h5>

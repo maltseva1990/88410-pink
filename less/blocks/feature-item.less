@@ -1,7 +1,7 @@
 
 .feature-item {
 
-  &__title {
+  .feature-item__title {
     color: @darkblue;
     text-align: center;
     margin: 0;
@@ -10,7 +10,7 @@
     letter-spacing: 1px;
   }
 
-  &__desc {
+  .feature-item__desc {
     color: @darkblue;
     text-align: center;
     margin: 0;
@@ -22,8 +22,7 @@
 }
 @media @tablet-widths {
   .feature-item {
-    text-align: left;
-    width: 330px;
+    width: 400px;
     float: right;
 
     .feature-item__title, .feature-item__desc {
@@ -34,17 +33,22 @@
 
 }
 @media @desktop-widths {
+
   .feature-item {
-    width: 280px;
+    width: 400px;
     display: inline-block;
     vertical-align: top;
     background: @gray;
     padding: 0;
     margin: 0;
-    margin-right: 3%;
+
 
     .feature-item__title, .feature-item__desc {
       text-align: center;
     }
+  }
+  .feature-item img {
+    padding-bottom: 50px;
+    margin-left: 120px;
   }
 }

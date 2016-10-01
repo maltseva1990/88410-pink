@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="index-page">
-
+  <div class="page-wrapper">
 <!-- в page-header лежит фоновая картинка -->
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -52,18 +52,18 @@
     </div>
   </header>
 
-  <div class="information">
-    <div class="container">
+  <div class="information" >
+    <div class="information__wrapper">
       <h2 class="information__text">Устали от серости мегаполиса? <br>Нам есть, что вам <br>предложить!</h2>
     </div>
   </div>
 
-  <div class="features">
+  <div class="features features--for-all">
     <div class="container clearfix features__wrapper">
 
       <section class="feature-item">
-        <h2 class="feature-item__title">Поднимает настроение</h2>
-        <p class="feature-item__desc">Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h2 class="feature-item__title">Заводит новых друзей</h2>
+        <p class="feature-item__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </section>
 
       <section class="feature-item">
@@ -71,11 +71,36 @@
         <p class="feature-item__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </section>
 
+
       <section class="feature-item">
+        <h2 class="feature-item__title">Поднимает настроение</h2>
+        <p class="feature-item__desc">Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </section>
+    </div>
+  </div>
+
+
+  <div class="features features--for-desk">
+    <div class="container clearfix features__wrapper">
+
+      <section class="feature-item">
+        <img src="img/iphone-screen-mobile@1x.png" alt="">
         <h2 class="feature-item__title">Заводит новых друзей</h2>
         <p class="feature-item__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </section>
 
+      <section class="feature-item">
+        <img src="img/iphone-screen-mobile@1x.png" alt="">
+        <h2 class="feature-item__title">Меняет мир вокруг</h2>
+        <p class="feature-item__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </section>
+
+
+      <section class="feature-item">
+        <img src="img/iphone-screen-mobile@1x.png" alt="">
+        <h2 class="feature-item__title">Поднимает настроение</h2>
+        <p class="feature-item__desc">Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </section>
     </div>
   </div>
 
@@ -223,6 +248,6 @@
     </div>
     <div id="map-canvas" class="map-wrapper"></div>
   </footer>
-
+  </div>
 </body>
 </html>

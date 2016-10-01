@@ -8,10 +8,18 @@ html, body {
 
 body {
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 940px;
+  overflow-x: hidden;
   background-color: @white;
   color: @black;
+
+  @media @tablet-widths {
+    width: 100%;
+    margin: 0 auto;
+  }
+  @media @desktop-widths {
+    width: 1200px;
+
+  }
 }
 
 .clearfix:before,
@@ -30,12 +38,15 @@ body {
 
 
   @media @tablet-widths {
-    width: 640px;
+    width: 700px;
     margin: 0 auto;
   }
 
   @media @desktop-widths {
-    width: 960px;
+    width: 1200px;
     margin: 0 auto;
+    .index-page {
+      margin: 0 auto;
+    }
   }
 }
