@@ -2,22 +2,42 @@
   display: block;
   position: absolute;
   right: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 0;
   float: right;
   width: 50px;
-  height: 4px;
+  height: 1px;
   border: none;
   outline: none;
   border-radius: 0;
   font-size: 0;
+  background: transparent;
+
+  .menu-toggle--active-none{
+    display: none;
+  }
 
   &:hover {
     opacity: 0.4;
   }
-
+  @media @tablet-widths {
+    .menu-toggle--active-none{
+      display: block;
+      margin-top: -5px;
+    }
+    .menu-toggle--cross-none {
+      display: none;
+    }
+  }
   @media @desktop-widths {
     display: none;
   }
 
 }
+.page-form .menu-toggle--active {
+  display: block;
+}
+.page-form .menu-toggle--cross {
+  display: none;
+}
+

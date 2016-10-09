@@ -3,52 +3,45 @@
 text-align: center;
   .page-header__wrapper {
     margin: 0 auto;
+    background-image: url('../../img/bg-back-mobile@1x.jpg');
   }
   .container();
   .clearfix();
   color: @white;
   background-color: @darkblue--header;
 
-  &__top-menu {
+  .page-header__top-menu {
     position: relative; /* потому что кнопка переключения - абс.поз. */
-    padding: 17px 0 12px 0;
     background-color: @darkblue;
   }
 .page-header--bg-for-nav {
-  padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
-  &__title {
-    font: @weight-light @font-size--big @font;
-    padding-bottom: 50px;
-    margin-top: 50px;
-  }
-  &__title-index {
-    margin-top: 0;
-  }
-
-.pink-form-mobile .page-header__title-wrapper {
-  background: @darkblue;
-}
-  .pink-form-mobile .page-header__title {
-    padding-top: 20px;
+  .page-header__title-index {
+    font-size: 0;
   }
 
   @media @tablet-widths {
-  width: 640px;
+  width: 700px;
   margin: 0 auto;
+  padding-bottom: 80px;
 
     .page-header__title {
-      padding: 0;
-      margin: 0;
-      padding-top: 50px;
-    }
+      font: @weight-light @font-size--big @font;
+      padding:0;
+      margin-top: 100px;
+      margin-left: 60px;
+      margin-right: 60px;
 
+    }
+    .page-header__title-index{
+      font: @weight-light 40px @font;
+    }
     .page-header__top-menu {
-      padding: 0;
       background-color: @black;
-      opacity: 0.4;
-      padding: 20px;
+      opacity: 0.5;
+      padding: 20px 0 20px 0;
     }
 
     .page-header--bg-for-nav {
@@ -57,7 +50,6 @@ text-align: center;
     .tablet-desk-content-left {
       float: right;
       width: 300px;
-
     }
   }
 
@@ -73,8 +65,25 @@ text-align: center;
       margin: 0 auto;
     }
     .page-header__title {
-      font-size: 50px;
+      font: @weight-light 50px @font;
+      margin-top: 55px;
+      margin-bottom: 30px;
+      margin-right: 0;
+      margin-left: 0;
     }
   }
+}
+.page-form .page-header--title {
+  font: @weight-light 24px @font;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
 
+@media @tablet-widths {
+  .page-form .page-header--title {
+    font: @weight-light 50px @font;
+
+  }
 }

@@ -1,11 +1,25 @@
 .reviews {
-  background-image: url("../img/");
+
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: bottom center;
+  background: @white;
+  margin-bottom: 100px;
 
-  &__inner {
-    padding-bottom: 65px;
+  .reviews__inner {
+    padding-bottom: 40px;
+    background: @white;
   }
 
+
+  @media @desktop-widths {
+    .reviews__block  {
+      display: none;
+    }
+
+    .reviews__inner {
+
+    }
+  }
 }
+

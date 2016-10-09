@@ -1,22 +1,59 @@
 .review {
   /* display: none;*/
   padding: 45px 0 0 0;
-
-  &__author {
+  background: @white;
+.review__author-info {
+  display: none;
+}
+  .review__author {
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     font: @weight-bold @font-size--medium @font;
     letter-spacing: 0.5px;
   }
 
-  /* текст отзыва */
-  &__text {
+  .review__text {
     color: @darkblue;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 65px;
     font:@weight-normal @font-size--small @font;
     line-height: @line-height;
   }
+
+
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media @tablet-widths {
+      background: @white;
+    }
+    .review__author-info {
+      display: block;
+      padding-bottom: 50px;
+      color: @darkblue;
+      font: @weight-normal @font-size--small @font;
+      line-height: @line-height;
+    }
+  }
+
+  @media @desktop-widths {
+   width: 700px;
+    background: @white;
+    .review__author {
+      font: @weight-bold @font-size--big @font;
+    }
+    .review__text {
+      font: @weight-normal @font-size--medium @font;
+      line-height: @line-height;
+
+    }
+    .review__author-info {
+      font: @weight-normal @font-size--medium @font;
+    }
+  }
+
 }
 /* переключение слайдов */
 
@@ -28,4 +65,16 @@
 }
 #review-3:checked ~ .slide-3 {
   display: block;
+}
+
+.review img {
+  display: none;
+}
+@media @desktop-widths {
+  .review img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
 }

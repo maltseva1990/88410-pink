@@ -13,10 +13,11 @@
   .feature-item__desc {
     color: @darkblue;
     text-align: center;
-    margin: 0;
-    margin-bottom: 34px;
+    margin: 0 auto;
     font: @weight-normal @font-size--small @font;
     letter-spacing: 0.5px;
+    line-height: @line-height--p;
+    width: 280px;
   }
 
 }
@@ -28,27 +29,20 @@
     .feature-item__title, .feature-item__desc {
       text-align: left;
     }
-
+    .feature-item__desc {
+      width: 400px;
+    }
   }
-
 }
+
 @media @desktop-widths {
 
   .feature-item {
-    width: 400px;
-    display: inline-block;
-    vertical-align: top;
-    background: @gray;
-    padding: 0;
-    margin: 0;
+    float: left;
+    margin: 0 auto;
+    margin-left: 30px;
+    width: 350px;
 
+  }
 
-    .feature-item__title, .feature-item__desc {
-      text-align: center;
-    }
-  }
-  .feature-item img {
-    padding-bottom: 50px;
-    margin-left: 120px;
-  }
 }

@@ -1,12 +1,10 @@
 .downloads {
-  padding: 30px 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-top: 370px;
   background-color: @darkblue--header;
 
 
   /* кнопка "скачать приложение"" */
-  &__btn {
+  .downloads__btn {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 30px;
@@ -19,28 +17,29 @@
     border: 3px solid @white;
     border-radius: 37px;
 
-    &:hover {
+    .downloads__btn:hover {
       opacity: 0.5;
     }
   }
 
   /* контейнер с картинками платформ */
-  &__items {
+  .downloads__items {
     margin-right: -36px;
     margin-bottom: 22px;
   }
 
   /* стили отдельных картинок платформ */
-  &__item {
+  .downloads__item {
     display: inline-block;
     vertical-align: bottom;
     margin-right: 36px;
   }
 
   /* текст под кнопкой "скачать приложение" */
-  &__information {
+  .downloads__information {
     margin: 0;
     padding: 0 20px;
+    padding-bottom: 30px;
     font: @weight-light @font-size--small @font;
   }
 }
@@ -48,13 +47,17 @@
 @media @tablet-widths {
   .downloads {
     padding: 0;
+    margin: 0;
 
-  }
+
   .downloads__wrapper{
     background: transparent;
     float: left;
     width: 300px;
     padding: 0;
+    margin: 0;
+    margin-left: 30px;
+  }
   }
 }
 
@@ -62,6 +65,16 @@
   .downloads{
   background: transparent;
   padding: 50px;
-  padding-bottom: 0
+  padding-bottom: 0;
+
+    .downloads__wrapper {
+      margin-left: 80px;
+    }
+    .downloads__items {
+      margin-top: 20px;
+    }
+    .downloads__information {
+      padding-top: 30px;
+    }
   }
 }

@@ -1,13 +1,13 @@
-/* служебный класс для скрытия всех радиокнопок в слайдере */
+
 .slider-controls {
   position: relative;
+  background: @gray;
 
   input[type="radio"] {
     display: none;
   }
 }
 
-/* контейнер с лейблами для переключения слайдов */
 .control-labels {
   position: absolute;
   bottom: 60px;
@@ -16,22 +16,25 @@
   margin-right: -10px;
   width: 200px;
 
-  /* позиционирование кнопок в слайдере с ценами */
-  &.table-prices {
+
+  .control-labels.table-prices {
     bottom: 42px;
   }
 }
 
-/* стили отдельного лейбла для переключения */
 .control-label {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   margin-right: 9px;
+
   width: 6px;
   height: 6px;
   background-color: @darkgray;
   border: 3px solid @white;
   border-radius: 50%;
+  @media @desktop-widths {
+    display: none;
+  }
 }
 
 /* изменение состояний лейблов при отмеченной радиокнопке */
@@ -49,4 +52,6 @@
 /* в неактивном состоянии лейблы в блоке цен имеют серый бордер */
 .table-prices .control-label {
   border: 3px solid @gray;
+
 }
+

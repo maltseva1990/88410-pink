@@ -1,0 +1,40 @@
+.copyright {
+
+  display: inline-flex;
+  margin-left: 100px;
+  .copyright__text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    font: 400 14px/18px @font;
+  }
+
+  .copyright__link {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 34px;
+    background-image: url('../img/logo-htmlacademy.svg');
+    font-size:0;
+
+    /*.copyright:after {
+      content: url('../img/logo-htmlacademy.svg');
+      position: absolute;
+      display: inline-block;
+    }*/
+
+    .copyright__link:hover {
+       opacity: 0.1;
+      /*.copyright:after {
+        content: url('../img/logo-htmlacademy.svg');
+        position: absolute;
+        top: 0;
+        left: 0;*/
+      }
+    }
+    .copyright:active {
+      opacity: 0.3;
+    }
+  }
+

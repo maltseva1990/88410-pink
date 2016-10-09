@@ -2,6 +2,7 @@
   .photos__block--bg-white{
     background: @white;
   }
+
   .photos__block-desc {
     color: @darkblue;
     font: @weight-normal @font-size--small @font;
@@ -45,7 +46,7 @@
   }
 }
 @media @tablet-widths {
-    .page-header__title {
+  .page-header__title {
     padding: 50px;
   }
   .photos__block-desc {
@@ -92,7 +93,6 @@
 }
 @media @desktop-widths {
 
-
   .photos__item img{
     width: 300px;
     height: 400px;
@@ -104,4 +104,12 @@
     width: 450px;
     height: 600px; // временно
   }
+}
+
+
+.page-photo .page-header__title-index {
+  font: @weight-normal @font-size--big @font;
+  color: @white;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
